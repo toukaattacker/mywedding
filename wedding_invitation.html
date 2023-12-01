@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../static/rose.png" type="image/x-icon">
+    <link rel="icon" href="../static/rose.png" type="image/png">
+    <title>Pras & Chika's Wedding</title>
+    
+</head>
+
+
+<style>
+
+    /* page1 */
+
+    body {
+        font-size: 16px;
+        background-color: #f0f0f0;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, sans-serif;
+        background-image: url('../static/background2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        text-align: center; /* Anda ingin menengahkan konten dalam body */
+    }
+
+    /* Container untuk slideshow */
+    #page1-container-slideshow {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px; /* Atur jarak antara slideshow dan teks */
+      height: 100vh;
+    }
+    
+    /* Slideshow */
+    .slideshow-container {
+        width: 100%;
+        height: 100vh;
+        float: left;
+        overflow: hidden;
+        margin-top: 0px;
+        
+       
+    }
+    
+    /* Gambar di dalam slideshow container */
+    .slideshow-container img {
+    width: 100%; /* Gambar mengisi seluruh lebar container */
+    max-height: auto; /* Tinggi gambar mengikuti aspek rasio asli */
+    display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+    margin: 0 auto; /* Untuk membuat gambar berada di tengah container */
+    }
+
+    /* Gambar dalam slideshow */
+    #slideshow img {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+        margin: 0 auto; /* Untuk membuat gambar berada di tengah container */
+        max-height: 1560px
+    }
+
+
+    /* Teks container */
+    #page1-container-text-container {
+      width: 100%; /* Lebar teks container */
+      max-width: 100%; /* Maksimum lebar adalah 100% dari container */
+    }
+    
+    /* Teks */
+    #text-container {
+      padding: 20px; /* Atur jarak antara teks dan tepi teks container */
+    }
+    
+    
+    #page1-container-slideshow h1 {
+        font-size: 12px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+        font-family: "TS", sans-serif;
+        color: #968668;
+        text-align: left;
+    }
+    
+    #page1-container-slideshow h2 {
+        font-size: 25px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+        font-family: "TS", sans-serif;
+        color: #968668;
+        text-align: left;
+    }
+    
+    #page1-container-slideshow h3 {
+        font-size: 50px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+        font-family: 'Whisper', sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        text-align: left;
+        color: #968668;
+    }
+    
+    /* Atur teks pada elemen dengan ID event-details */
+    #event-details {
+      text-align: center; /* Teks akan berada di sebelah kiri */
+    }
+    
+    /* Gaya untuk elemen <h1> dalam event-details */
+    #event-details h1 {
+        font-size: 12px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+        font-family: "TS", sans-serif;
+        color: #968668;
+        text-align: center;
+    }
+    
+    /* Gaya untuk elemen <h2> dalam event-details */
+    #event-details h2 {
+        font-size: 25px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+        font-family: "TS", sans-serif;
+        color: #968668;
+        text-align: center;
+    }
+    
+    /* Gaya untuk elemen <h3> dalam event-details */
+    #event-details h3 {
+        font-size: 50px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+        font-family: 'Whisper', sans-serif;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #968668;
+    }
+    
+    /* Gaya untuk elemen #countdown dalam event-details */
+    #event-details #countdown {
+      margin-top: 20px; /* Jarak atas dari elemen #countdown */
+    }
+    
+    /* Gaya untuk elemen #countdown-text dalam event-details */
+    #event-details #countdown-text {
+      font-size: 24px; /* Ukuran font yang lebih besar */
+      color: #968668; /* Warna teks */
+      margin-bottom: 100px; /* Jarak bawah antara elemen #countdown-text */
+    }
+    
+    /* Gaya untuk elemen #countdown-timer dalam event-details */
+    #event-details #countdown-timer {
+        font-family: 'Tektur', sans-serif; /* Menggunakan font 'Tektur' */
+        font-weight: 300; /* Bold */
+        color: #968668; /* Warna teks */
+     
+    }
+    
+    /* Gaya untuk elemen <audio> dalam event-details */
+    #event-details audio {
+      width: 100%; /* Mengisi lebar container */
+      margin-top: 20px; /* Jarak atas dari elemen <audio> */
+    }
+    
+    /* Gaya untuk elemen #days, #hours, #minutes, dan #seconds dalam event-details */
+    #event-details #days,
+    #event-details #hours,
+    #event-details #minutes,
+    #event-details #seconds {
+    font-size: 18px; /* Ukuran font yang sedang */
+    color: #333; /* Warna teks */
+    margin-right: 5px; /* Jarak kanan antara elemen-elemen ini */
+    }
+    
+    
+    /* Gambar dalam slideshow */
+#slideshow img {
+    width: 100%; /* Gambar mengisi seluruh lebar container */
+    max-height: auto; /* Tinggi gambar mengikuti aspek rasio asli */
+    display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+    margin: 0 auto; /* Untuk membuat gambar berada di tengah container */
+}
+
+@media (max-width: 768px) {
+    #page1-container-slideshow {
+        flex-direction: column; /* Ubah tata letak menjadi satu kolom pada layar kecil */
+        overflow: hidden;
+    }
+
+    .slideshow-container,
+    #page1-container-text-container {
+        width: 100%; /* Mengisi lebar layar penuh pada layar kecil */
+        overflow: hidden;
+    }
+
+    /* Pada layar kecil, atur tinggi maksimum gambar sesuai aspek rasio */
+    #slideshow img {
+        max-height: 100vh; /* Maksimum tinggi gambar sesuai tinggi viewport */
+    }
+}
+
+
+</style>
+
+<body>
+
+    <section id="page1-container-slideshow">
+    <div class="slideshow-container" id="slideshow-top">
+        <div id="slideshow-container">
+            <div id="slideshow">
+                    <img src="../static/Photo 1.jpg" alt="Slide 1">
+                    <img src="../static/Photo 2.jpg" alt="Slide 2">
+                    <img src="../static/Photo 3.jpg" alt="Slide 3">
+                    <img src="../static/Photo 4.jpg" alt="Slide 4">
+                    <img src="../static/Photo 5.jpg" alt="Slide 5">
+            </div>
+        </div>
+    </div>   
+    <section id="page1-container-text-container">
+        <div id="text-container">
+            <div id="text">
+                <div id="event-details">
+                    <h1>We invite you to celebrate our wedding</h1>
+                    <h2>The Wedding of</h2>
+                    <h3>Pras & Chika</h3>
+                    <h1>Sabtu, 16 Desember 2023</h1>
+                    <h1>di Wijaya Sakti Convention Hall (Dedy Jaya Hotel Ciledug)</h1>
+                    <div id="countdown">
+                        <h1 id="countdown-text">Save the Date</h1>
+                        <div id="countdown-timer">
+                            <span id="days">00</span> Days
+                            <span id="hours">00</span> Hours
+                            <span id="minutes">00</span> Minutes
+                            <span id="seconds">00</span> Seconds
+                            <audio controls autoplay>
+                                <source src="../static/music.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="music-container">   
+    </div>
+</section>
+<hr> <!-- Garis horizontal sebagai pembatas visual -->
+<div style="page-break-after: always;"></div>
+<div class="page-break"></div> <!-- Pemisah halaman saat mencetak -->
+</body>
+
+<script>
+
+    let slideIndexTop = 1;
+    showSlides(slideIndexTop, 'slideshow-top');
+
+    
+
+    function showSlides(n, slideshowID) {
+        const slides = document.getElementById(slideshowID).getElementsByClassName("mySlides");
+        // ...
+    }
+    
+
+    
+
+    const images = document.querySelectorAll('#slideshow img');
+    let currentImageIndex = 0;
+
+    function showImage(index) {
+        images[currentImageIndex].style.display = 'none';
+        images[index].style.display = 'block';
+        currentImageIndex = index;
+    }
+
+    function nextImage() {
+        const nextIndex = (currentImageIndex + 1) % images.length;
+        showImage(nextIndex);
+    }
+
+    setInterval(nextImage, 3000); // Ganti gambar setiap 3 detik
+</script>
+
+<script>
+    // Tanggal target
+    const targetDate = new Date('December 16, 2023 00:00:00').getTime();
+  
+    // Fungsi untuk memperbarui countdown setiap detik
+    const updateCountdown = () => {
+        const currentDate = new Date().getTime();
+        const timeRemaining = targetDate - currentDate;
+  
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+        document.getElementById('days').innerText = formatTime(days);
+        document.getElementById('hours').innerText = formatTime(hours);
+        document.getElementById('minutes').innerText = formatTime(minutes);
+        document.getElementById('seconds').innerText = formatTime(seconds);
+    };
+  
+    // Fungsi untuk mengganti waktu menjadi format 2 digit (misalnya, "05" bukan "5")
+    const formatTime = (time) => {
+        return time < 10 ? `0${time}` : time;
+    };
+  
+    // Memulai pembaruan countdown
+    updateCountdown();
+    const countdownInterval = setInterval(updateCountdown, 1000);
+</script>
+
+<script>
+    const pageContainers = document.querySelectorAll(".page-container");
+
+    // Function to check if a page is in the viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2);
+    }
+    
+    // Function to handle page transitions
+    function handlePageTransitions() {
+        pageContainers.forEach((container, index) => {
+            if (isElementInViewport(container)) {
+                container.classList.add("show");
+            } else {
+                container.classList.remove("show");
+            }
+        });
+    }
+    
+    // Initial check for the first page
+    handlePageTransitions();
+    
+    // Add scroll event listener to handle transitions as the user scrolls
+    window.addEventListener("scroll", handlePageTransitions);
+    
+    <script>
+
+
+
+<script>
+const pageContainers = document.querySelectorAll(".page-container");
+const page1Container = document.getElementById("page1-container");
+const page2Container = document.getElementById("page2-container");
+const page3Container = document.getElementById("page3-container");
+const page4Container = document.getElementById("page4-container");
+const page5Container = document.getElementById("page5-container");
+const page6Container = document.getElementById("page6-container");
+
+// Function to check if a page is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2);
+}
+
+// Function to handle page transitions
+function handlePageTransitions() {
+    pageContainers.forEach((container) => {
+        if (isElementInViewport(container)) {
+            container.classList.add("show");
+        } else {
+            container.classList.remove("show");
+        }
+    });
+}
+
+// Initial check for the first page
+page1Container.classList.add("show");
+
+// Add scroll event listener to handle transitions as the user scrolls
+window.addEventListener("scroll", handlePageTransitions);
+</script>
+
+
+<hr> <!-- Garis horizontal sebagai pembatas visual -->
+    <div style="page-break-after: always;"></div>
+    <div class="page-break"></div> <!-- Pemisah halaman saat mencetak -->
+
+</html>    
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Gaya CSS Anda sebelumnya */
+
+/* Page 2 Container */
+
+#page2-container {
+    width: 100%;
+    
+    margin-top: 20px; /* Saya mengubah margin-top ke nilai yang lebih umum */
+    margin-bottom: 20px; /* Saya mengubah margin-bottom ke nilai yang lebih umum */
+
+}
+
+#page2-container h1 {
+    font-size: 12px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+    text-align: center;
+    font-family: "TS", sans-serif;
+    color: #968668;
+}
+
+#page2-container h2 {
+    font-size: 20px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+    text-align: center;
+    font-family: "TS", sans-serif;
+    color: #968668;
+}
+
+#page2-container h3 {
+    font-size: 20px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+    font-family: 'Whisper', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #968668;
+}
+
+.photos-container {
+    display: flex;
+    justify-content: center; /* Posisikan di tengah secara horizontal */
+    margin-top: 10px; /* Atur margin atas ke nilai yang lebih umum */
+}
+
+.photo {
+    text-align: center;
+    margin-right: 5px; /* Saya mengubah jarak antara foto-foto */
+}
+
+.photo:first-child {
+    margin-right: 0; /* Saya mengubah margin kiri pada foto pertama */
+}
+
+.photo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0; /* Mengurangi margin bawah gambar */
+}
+
+.text-details {
+    text-align: center;
+    margin-top: 0; /* Saya mengubah margin atas teks */
+}
+
+.krem-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Tengah secara vertikal */
+    align-items: center; /* Tengah secara horizontal */
+    background: transparent; /* Menghapus latar belakang kuning */
+    padding: 10px;
+    text-align: center;
+    height: auto; /* Mengisi tinggi sesuai konten parent */
+    margin-top: 0; /* Saya mengubah margin atas ke nilai yang lebih umum */
+}
+
+/* CSS untuk script.js */
+.page-container {
+    position: relative;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.page-container.show {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+<section id="page2-container" class="page-container">
+    <div class="krem-background">
+    <h1>
+        "Dan di antara tanda-tanda (kebesaran)-Nya ialah<br>
+        Dia menciptakan pasangan-pasangan untukmu<br>
+        dari jenismu sendiri, agar kamu cenderung<br>
+        dan merasa tenteram kepadanya,<br>
+        dan Dia menjadikan di antaramu rasa kasih dan sayang.<br>
+        Sungguh, pada yang demikian itu benar-benar terdapat<br>
+        tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."<br>
+        Q.S Ar Rum : 21
+    </h1><br>
+    </div>
+    
+    <div class="photos-container">
+        <div class="photo">
+            <img src="../static/photo1.jpg" alt="Pras's Photo">
+            <div class="text-details">
+                <h3>Prasetyo Adi Nugraha, S.Kom. (Pras)</h3>
+                <h1>Putra pertama dari Pasangan</h1>
+                <h1>Bapak Sopan Sopyan, S.Kom. (Yayang) & Ibu Ati Nurhati (Nur)</h1>
+                <h1>Desa Damarguna, Kec. Ciledug, Kab. Cirebon</h1>
+            </div>
+        </div>
+    
+        <div class="photo">
+            <img src="../static/photo2.jpg" alt="Chika's Photo">
+            <div class="text-details">
+                <h3>Siska Dwi Novia, S.I.Kom. (Chika)</h3>
+                <h1>Putri Kedua dari Pasangan</h1>
+                <h1>Bapak Ahmad Toha & Ibu Titin Kristin</h1>
+                <h1>Desa Cisaat, Kec, Waled, Kab. Cirebon</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+const pageContainers = document.querySelectorAll(".page-container");
+    
+// Function to check if a page is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2);
+}
+    
+// Function to handle page transitions
+function handlePageTransitions() {
+    pageContainers.forEach((container) => {
+        if (isElementInViewport(container)) {
+            container.classList.add("show");
+        } else {
+            container.classList.remove("show");
+        }
+    });
+}
+    
+// Initial check for the first page
+pageContainers[0].classList.add("show");
+    
+// Add scroll event listener to handle transitions as the user scrolls
+window.addEventListener("scroll", handlePageTransitions);
+</script>
+<div class="page-container"></div>
+</section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 4</title>
+    <style>
+
+
+    
+        /* Gaya CSS sesuai kebutuhan Anda */
+        .undangan-page-container, .page4-container {
+            position: relative;
+            height: 200vh; /* Mengganti "height" menjadi "min-height" */
+            opacity: 0;
+            margin-top: 10vh;
+            transform: translateY(20px);
+            transition: opacity 0.7s ease-in-out, transform 1s ease-in-out;
+        }
+        
+        .show {
+            opacity: 1;
+        }
+        
+    
+        /* Gaya elemen "white-background" */
+        .white-background {
+            background-color: white;
+            max-width: 100%; /* Lebar elemen 100% dari kontainer */
+            height: auto; /* Tinggi elemen menyesuaikan konten */
+            margin: 0 auto; /* Pusatkan elemen secara horizontal */
+            padding: 10px; /* Tambahkan ruang antara konten dan batas elemen */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut */
+        }
+
+    
+        /* Gaya elemen "iframe" */
+        iframe {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; /* Lebar elemen 100% dari kontainer */
+        }
+    
+        /* Gaya elemen "a" (anchor) dan "button" */
+        a, button {
+            display: block; /* Tampilkan sebagai blok agar lebar maksimal */
+            margin: 20px auto;
+            background-color: #968668;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: "TS", sans-serif;
+            text-align: center; /* Tengah secara horizontal */
+        }
+        
+        /* Gaya elemen "rsvp-form" dan "form" */
+        form {
+            text-align: center; /* Tengah secara horizontal */
+        }
+        
+        /* Gaya elemen "label", "input", "select", dan "textarea" */
+        label {
+            display: block;
+            font-weight: bold;
+            text-align: center; /* Tengah secara horizontal */
+        }
+        
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%; /* Lebar elemen 100% dari kontainer */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center; /* Tengah secara horizontal */
+        }
+
+        /* Media query untuk layar yang lebih kecil daripada 768 piksel (misalnya, ponsel) */
+@media (max-width: 767px) 
+    .white-background {
+        width: 100%; /* Lebar elemen 100% dari kontainer */
+        padding: 5px; /* Mengurangi ruang antara konten dan batas elemen */
+    }
+
+    iframe {
+        max-width: 100%; /* Lebar elemen 100% dari kontainer */
+    }
+
+    a, button {
+        margin: 10px auto; /* Mengurangi margin atas dan bawah */
+        padding: 8px 16px; /* Mengurangi ukuran tombol */
+    }
+
+    form {
+        text-align: center; /* Tengah secara horizontal */
+    }
+
+    label {
+        text-align: center; /* Tengah secara horizontal */
+    }
+
+    input[type="text"], input[type="email"], select, textarea {
+        padding: 8px; /* Mengurangi padding */
+    }
+    
+        textarea {
+            resize: none;
+        }
+    
+        /* Gaya elemen "h1", "h2", "h3" */
+        #page4-container h1 {
+            font-size: 16px;
+            font-family: "TS", sans-serif;
+            color: #968668;
+            text-align: center;
+        }
+    
+        #page4-container h2 {
+            font-size: 25px;
+            font-family: "TS", sans-serif;
+            color: #968668;
+            text-align: center;
+        }
+    
+        #page4-container h3 {
+            font-size: 30px;
+            font-family: 'Whisper', sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #968668;
+        }
+    
+        /* Gaya elemen "ucapan-list" dan "footer" */
+        .ucapan-list {
+            list-style: none;
+            text-align: left;
+        }
+    
+        footer {
+            margin-top: 20px;
+            color: #888;
+        }
+
+
+    </style>
+    
+    
+    
+
+</head>
+<body>
+    <section id="page4-container" class="undangan-page-container">
+        <div class="white-background"><br><br>
+        <h3>Bismillahirrohmanirrohim</h3>
+        <h3>Assalamualaikum warahmatullahi wabarakatuh</h3>
+        
+        <img src="../static/rings.png" alt="Gambar Cincin">
+        
+        <h1>Dengan penuh rasa syukur disertai rahmat dan ridho Allah SWT,<br>
+            kami bermaksud menyelenggarakan Syukuran Pernikahan kami:<br><br>
+    
+        Resepsi:<br>
+        Sabtu | 16 Desember 2023<br>
+        <a href="#RSVP" class="save-the-date-button">Save The Date</a><br>
+        Pukul | 11.00 - 16.00<br><br>
+       
+        Bertempat di
+        Wijaya Sakti Convention Hall (Dedy Jaya Hotel Ciledug)<br>
+        Jl. Merdeka Barat, Ciledug Kulon, Kec. Ciledug, Kabupaten Cirebon<br><br>
+    
+        
+    
+        Kesan yang dalam akan terukir di hati kami apabila Bapak/Ibu/Saudara/i<br>
+        berkenan hadir dalam memberikan do’a restu kepada kami.<br>
+        Atas kehadiran dan do’a restunya kami ucapkan terima kasih.</h1>
+        
+        <h3>Wassalamualaikum warahmatullahi wabarakatuh</h3>
+        <img src="../static/rose.png" alt="Gambar Mawar">
+        <h1>Kami yang berbahagia</h1>
+        
+        <h3>Pras & Chika</h3>
+        <div class="page-container"></div>
+    </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pageContainers = document.querySelectorAll(".undangan-page-container");
+    
+            // Function to check if a page is in the viewport
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2);
+            }
+    
+            // Function to handle page transitions
+            function handlePageTransitions() {
+                pageContainers.forEach((container) => {
+                    if (isElementInViewport(container)) {
+                        container.style.opacity = 1; // Set opacity menjadi 1 ketika masuk viewport
+                    } else {
+                        container.style.opacity = 0; // Set opacity menjadi 0 ketika keluar viewport
+                    }
+                });
+            }
+    
+            // Initial check for the first page
+            pageContainers[0].style.opacity = 1;
+    
+            // Add scroll event listener to handle transitions as the user scrolls
+            window.addEventListener("scroll", handlePageTransitions);
+        });
+    </script>
+    <hr>
+    <hr> <!-- Garis horizontal sebagai pembatas visual -->
+    <div style="page-break-after: always;"></div>
+    <div class="page-break"></div> <!-- Pemisah halaman saat mencetak -->
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <style>
+
+        /* Gaya titik */
+        .dot {
+          height: 12px; /* Tinggi dot */
+          width: 12px; /* Lebar dot */
+          margin: 0 5px; /* Jarak horizontal antara dot */
+          background-color: #bbb;
+          border-radius: 100%;
+          display: inline-block;
+          cursor: pointer;
+          transition: transform 0.2s;
+          position: relative;
+          top: -250px; /* Posisi vertikal elemen .dot diatur ke -15px untuk menaikkannya */
+        }
+        
+        .active, .dot:hover {
+          background-color: #717171;
+          transform: scale(1.2); /* Efek jelly saat hover */
+        }
+        
+        /* Gaya tambahan untuk slideshow di bagian bawah konten */
+        #slideshow-bottom {
+          max-width: 500px;
+          margin: 0 auto;
+          position: relative;
+          overflow: hidden; /* Untuk memotong gambar yang berada di luar jendela slideshow */
+        }
+        
+        #slideshow-bottom .mySlides {
+          display: block;
+          width: 33.33%; /* Tiga foto ditampilkan pada satu waktu */
+          float: left;
+          transition: transform 1s;
+          margin-bottom: 10px; /* Mengurangi margin bawah gambar */
+        }
+        
+        #slideshow-bottom img {
+          width: 100%;
+        }
+        
+        #slideshow-bottom .prev, #slideshow-bottom .next {
+          background: rgba(0, 0, 0, 0.3); /* Latar belakang transparan */
+          color: white;
+          padding: 10px;
+          font-size: 30px;
+          cursor: pointer;
+          position: absolute;
+          top: 25%;
+          transform: translateY(20px);
+        }
+        
+        #slideshow-bottom .prev {
+          left: 0;
+        }
+        
+        #slideshow-bottom .next {
+          right: 0;
+        }
+        
+        /* Kode CSS tambahan */
+        .page5-container, .slideshow-container2, .slideshow-bottom {
+          height: 100vh;
+          opacity: 0;
+          margin-top: 20vh;
+          transform: translateY(20px);
+          transition: opacity 0.7s ease-in-out, transform 1s ease-in-out;
+          /* opacity: 1; */
+        }
+        
+
+
+        .show {
+          opacity: 1;
+        }
+        
+        #page5-container h2 {
+            font-size: 25px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+            font-family: "TS", sans-serif;
+            color: #968668;
+            text-align: center;
+        }
+        
+        #page5-container h3 {
+            font-size: 20px; /* Sesuaikan ukuran font sesuai keinginan Anda */
+            font-family: 'Whisper', sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #968668;
+        }
+    </style>
+    
+</head>
+<body>
+    <section id="page5-container">
+    <div class="slideshow-container2" id="slideshow-bottom">
+<h2>GALLERY PHOTOS<h2>
+    <h3>Pras & Chika<h3>
+        <div class="mySlides fade">
+            <img src="../static/Photo 1.jpg" alt="Photo 1">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="../static/Photo 2.jpg" alt="Photo 2">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="../static/Photo 3.jpg" alt="Photo 3">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="../static/Photo 4.jpg" alt="Photo 4">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="../static/Photo 5.jpg" alt="Photo 5">
+        </div>
+        
+        <!-- Tambahkan gambar-gambar lain sesuai kebutuhan -->
+    
+        <a class="prev" onclick="plusSlides(-1, 'slideshow-bottom')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow-bottom')">&#10095;</a>
+    </div>
+    
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1, 'slideshow-bottom')"></span>
+        <span class="dot" onclick="currentSlide(2, 'slideshow-bottom')"></span>
+        <span class="dot" onclick="currentSlide(3, 'slideshow-bottom')"></span>
+        <span class="dot" onclick="currentSlide(4, 'slideshow-bottom')"></span>
+        <span class="dot" onclick="currentSlide(5, 'slideshow-bottom')"></span>
+    </div>
+    <div class="page-container"></div>
+    </section>
+    <hr> <!-- Garis horizontal sebagai pembatas visual -->
+    <div style="page-break-after: always;"></div>
+    <div class="page-break"></div> <!-- Pemisah halaman saat mencetak -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const pageContainers = document.querySelectorAll(".slideshow-container2");
+    
+            // Function to check if a page is in the viewport
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2);
+            }
+    
+            // Function to handle page transitions
+            function handlePageTransitions() {
+                pageContainers.forEach((container) => {
+                    if (isElementInViewport(container)) {
+                        container.style.opacity = 1; // Set opacity menjadi 1 ketika masuk viewport
+                    } else {
+                        container.style.opacity = 0; // Set opacity menjadi 0 ketika keluar viewport
+                    }
+                });
+            }
+    
+            // Initial check for the first page
+            pageContainers[0].style.opacity = 1;
+    
+            // Add scroll event listener to handle transitions as the user scrolls
+            window.addEventListener("scroll", handlePageTransitions);
+        });
+    </script>
+       
+
+</body>
+</html>
+
+<script>
+    let slideIndex = 0;
+let autoSlideIndex = 0;
+
+showSlides();
+autoShowSlides();
+
+function plusSlides(n, containerId) {
+  showSlides((slideIndex += n), containerId);
+}
+
+function currentSlide(n, containerId) {
+  showSlides((slideIndex = n), containerId);
+}
+
+function showSlides() {
+  const slides = document.querySelectorAll('.mySlides');
+  const dots = document.querySelectorAll('.dot');
+
+  // Sembunyikan semua slide
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  // Tampilkan tiga slide sekaligus
+  for (let i = slideIndex; i < slideIndex + 3; i++) {
+    if (slides[i]) {
+      slides[i].style.display = 'block';
+    }
+  }
+
+  // Perbarui dot yang aktif
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '');
+  }
+  dots[slideIndex].className += ' active';
+}
+
+function autoShowSlides() {
+  let i;
+  const autoSlides = document.querySelectorAll('.mySlides');
+  const autoDots = document.querySelectorAll('.dot');
+
+  // Sembunyikan semua slide
+  for (i = 0; i < autoSlides.length; i++) {
+    autoSlides[i].style.display = 'none';
+  }
+
+  autoSlideIndex++;
+  if (autoSlideIndex >= autoSlides.length - 2) {
+    autoSlideIndex = 0;
+  }
+
+  // Perbarui dot yang aktif
+  for (i = 0; i < autoDots.length; i++) {
+    autoDots[i].className = autoDots[i].className.replace(' active', '');
+  }
+
+  autoSlides[autoSlideIndex].style.display = 'block';
+  autoSlides[autoSlideIndex + 1].style.display = 'block';
+  autoSlides[autoSlideIndex + 2].style.display = 'block';
+
+  autoDots[autoSlideIndex].className += ' active';
+
+  setTimeout(autoShowSlides, 3000); // Gantilah 3000 dengan interval yang Anda inginkan
+}
+</script>
+      
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lokasi Acara</title>
+        <style>
+
+ 
+    
+            /* Gaya dasar untuk elemen h2 dan h3 */
+            h2 {
+                font-size: 25px;
+                text-align: center;
+                font-family: "TS", sans-serif;
+                color: #968668;
+            }
+    
+            h3 {
+                font-size: 25px;
+                font-family: 'Whisper', sans-serif;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #968668;
+            }
+    
+            /* Gaya untuk elemen dengan ID google-map-container */
+    #google-map-container {
+        position: relative;
+        height: 100vh;
+        opacity: 0;
+        margin-top: -100vh;
+        transform: translateY(20px);
+        transition: opacity 0.7s ease-in-out, transform 1s ease-in-out;
+        opacity: 1;
+    }
+    
+    /* Gaya untuk elemen h3 yang berisi judul "Lokasi Acara" */
+    #google-map-container h3 {
+        margin-top: -100px; /* Mengangkat elemen h3 ke atas */
+    }
+    
+    
+            /* Gaya untuk elemen dengan kelas show */
+            .show {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="google-map-container">
+            <h3>Lokasi Acara</h3>
+    
+            <!-- Google Map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3608028065266!2d108.7385134147696!3d-6.904361768993993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f095ad799a2dd%3A0xf71920f4a0f9b879!2sDedy%20Jaya%20Hotel%20Ciledug!5e0!3m2!1sen!2sid!4v1654140255085"
+                width="810"
+                height="455"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+    
+            <!-- Tombol Petunjuk Arah -->
+            <a
+                href="https://www.google.com/maps/place/Dedy+Jaya+Hotel+Ciledug/@-6.9068479,108.7407017,15z/data=!4m9!3m8!1s0x2e6f096357f69bb5:0xa1360af2b333fd6c!5m2!4m1!1i2!8m2!3d-6.9068479!4d108.7407017!16s%2Fg%2F11fqctv3jc?entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Petunjuk Arah ke Lokasi
+            </a>
+        </section>
+        
+        <hr> <!-- Garis horizontal sebagai pembatas visual -->
+        <div style="page-break-after: always;"></div>
+        <div class="page-break"></div> <!-- Pemisah halaman saat mencetak -->
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const pageContainers = document.querySelectorAll("#google-map-container");
+    
+                // Function to check if a page is in the viewport
+                function isElementInViewport(el) {
+                    const rect = el.getBoundingClientRect();
+                    return (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2);
+                }
+    
+                // Function to handle page transitions
+                function handlePageTransitions() {
+                    pageContainers.forEach((container) => {
+                        if (isElementInViewport(container)) {
+                            container.style.opacity = 1; // Set opacity menjadi 1 ketika masuk viewport
+                        } else {
+                            container.style.opacity = 0; // Set opacity menjadi 0 ketika keluar viewport
+                        }
+                    });
+                }
+    
+                // Initial check for the first page
+                pageContainers[0].style.opacity = 1;
+    
+                // Add scroll event listener to handle transitions as the user scrolls
+                window.addEventListener("scroll", handlePageTransitions);
+            });
+        </script>
+    </body>
+    
+    </html>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman RSVP</title>
+    <div id="RSVP"></div>
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <footer>
+        <section id="page7-container" class="RSVP">
+            <div id="rsvp-section">
+                <div class="rsvp-form">
+                    <h3>RSVP</h3>
+                    <!-- Tambahkan elemen iframe untuk menyematkan formulir Google -->
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWPxVR_Kh8SkYYjL-pFtXJ6kPDlyOkQMA3ncVPsMKy7zqExw/viewform?embedded=true" width="100%" height="1087" frameborder="0" marginheight="0" marginwidth="0">Memuat...</iframe>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
+<body>
+    <section id="page8-container" class="gift-container8">
+        <div class="gift-container">
+            <h3>Gift</h3>
+            <h1>Kirimkan hadiah pernikahan kami melalui rekening berikut:</h1>
+            <img src="../static/46797.png" alt="46797" style="max-width: 100%; height: auto;">
+            <div class="bank-icon"></div>
+            
+            <div class="rekening-info">
+                <div class="rekening-column">
+                    <h2>Bank: Seabank</h2>
+                    <img src="../static/logo-seabank.png" alt="Seabank Logo">
+                    <div class="rekening-container">
+                        <button class="copy-button">Klik Salin</button>
+                        <input type="text" value="9012 0912 6447" class="rekening-number" readonly>
+                    </div>
+                    <h1>Atas Nama: Prasetyo Adi Nugraha</h1>
+                </div>
+                <div class="rekening-column">
+                    <h2>Bank: Seabank</h2>
+                    <img src="../static/logo-seabank.png" alt="Seabank Logo">
+                    <div class="rekening-container">
+                        <button class="copy-button">Klik Salin</button>
+                        <input type="text" value="9014 0862 7435" class="rekening-number" readonly>
+                    </div>
+                    <h1>Atas Nama: Siska Dwi Novia</h1>
+                </div>
+            </div>
+        </div>
+
+        
+
+        &copy; Pras & Chika
+    </section>
+
+    <style>
+        /* Gaya CSS untuk elemen dengan ID 'page8-container' */
+
+        #page8-container, gift-container8 {
+            margin-top: 20vh;
+        }
+
+#page8-container h1 {
+    font-size: 16px;
+    font-family: "TS", sans-serif;
+    color: #968668;
+    text-align: center;
+}
+
+#page8-container h2 {
+    font-size: 20px;
+    font-family: "TS", sans-serif;
+    color: #968668;
+    text-align: center;
+}
+
+#page8-container h3 {
+    font-size: 30px;
+    font-family: 'Whisper', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #968668;
+}
+
+.rekening-info {
+    display: flex;
+    justify-content: space-between; /* Menggunakan 'space-between' untuk jarak yang konsisten */
+}
+
+.rekening-column {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px; /* Menambahkan margin untuk mengatur jarak antara kolom-kolom */
+}
+
+/* Batasi lebar kolom nomor rekening */
+.rekening-container input[type="text"] {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    </style>
+    
+
+    <script>
+        // JavaScript page8
+        const copyButtons = document.querySelectorAll(".copy-button");
+
+        copyButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const rekeningNumber = this.parentElement.querySelector("input");
+                rekeningNumber.select();
+                document.execCommand("copy");
+                alert("Nomor rekening telah disalin: " + rekeningNumber.value);
+            });
+        });
+    </script>
+</body>
+</html>
+

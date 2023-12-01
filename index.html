@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pras & Chika's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../static/rose.png" type="image/png">
+    <title>Undangan Pernikahan Pras & Chika</title>
+
+
+    <style>
+        body {
+            background-image: url('../static/background2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'TS', sans-serif;
+            color: #968668;
+            text-align: center;
+        }
+    </style>
+    <style>
+        /* Ganti background gambar1 dengan gambar yang sesuai */
+        #Background.png {
+            background-image: url('Background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'TS', sans-serif;
+            color: #968668;
+            text-align: center;
+        }
+
+        #invitation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+
+        h1 {
+            font-family: 'Whisper', sans-serif;
+            font-size: 50px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        h2, h3, h4 {
+            font-size: 12px;
+            margin: 0;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+        
+
+        p {
+            font-size: 24px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #968668;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #555;
+        }
+    </style>
+    <style>
+        #invitation {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Tengah secara vertikal */
+            align-items: center; /* Tengah secara horizontal */
+            height: 100%; /* Mengisi tinggi elemen yang mengandungnya */
+        }
+        
+        #stiker-103 {
+            background-color: #fcf6fa;
+            border: 2px solid #968668;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 241px;
+            height: 120px;
+        }
+        
+        
+    </style>
+
+    <style>
+        #guestName {
+            width: 200px; /* Lebar input nama tamu */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    
+        #invitationLink {
+            text-decoration: none;
+            background-color: #968668;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 10px; /* Jarak antara input dan tautan */
+        }
+        
+    
+        #invitationLink:hover {
+            background-color: #555;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <section id="index">
+        <div id="background2">
+            <div id="invitation">
+                <h2>The Wedding</h2>
+                <h1>Pras & Chika</h1>
+                <h2>Sabtu, 16 Desember 2023</h2>
+                <h3>Resepsi Pukul 11.00 S/D 16.00</h3><br>
+                <h3>Masukan Nama Tamu Disini :</h3>
+                <input type="text" id="guestName" placeholder="Nama Tamu">
+                <a id="invitationLink" style="display: none;" href="dear.html">SUBMIT</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var invitationLink = document.getElementById('invitationLink');
+        var guestName = document.getElementById('guestName');
+
+        guestName.addEventListener('input', function () {
+            var name = guestName.value;
+            if (name.trim() === "") {
+                invitationLink.style.display = "none";
+            } else {
+                invitationLink.style.display = "inline";
+                invitationLink.href = "dear.html?guest=" + encodeURIComponent(name);
+            }
+        });
+    </script>
+</body>
+</html>
